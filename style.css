@@ -93,7 +93,7 @@ a{
 }
 #home .header-content{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr .8fr;
     max-width:1100px;
     margin:auto;
     padding: 5rem 2rem 0;
@@ -135,10 +135,7 @@ margin: 1rem 0 2rem;
     color: #aeb3f3e8;
 }
 #home .header-content img{
-    max-width: 350px;
-}
-#home .header-content img:hover{
-max-width: 360px;
+    max-width: 450px;
 }
 #about,
 #skills, 
@@ -386,8 +383,26 @@ max-width: 360px;
 }
 /* footer End */
 /* Responsive */
-/* tablet responsive */
-@media (max-width: 768px){
+
+
+/*  */
+@media (max-width:970px){ 
+    #home .header-content img {
+        max-width: 260px;
+    }
+    #home .header-content h1{
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+  }
+  /* @media (max-width:740px){
+    #home .header-content img {
+        margin: auto;
+        width: 160px;
+    }
+  } */
+/* /* tablet responsive */
+@media (max-width: 770px){
     #home .navbar nav{
         display: block;
         text-align: center;
@@ -409,11 +424,8 @@ max-width: 360px;
         max-width: 250px;
         margin: auto;
     }
-    #home .header-content img:hover{
-        max-width: 260px;
-    }
     #home .header-content h1{
-        font-size: 50px;
+        font-size: 37px;
     }
     #about .about-content,
     #contact .row{
@@ -431,17 +443,18 @@ max-width: 360px;
     }
 }
 /* mobile Responsive */
-@media (max-width: 528px){
+@media (max-width: 576px){
     #home .header-content h1{
-        font-size: 33px;
+        font-size: 30px;
     }
     #home .header-content p span,#home .header-content .title{
         font-size: 16px;
     }
     #home .navbar nav ul a{
-        margin: 0 7px;
+        margin: 0 6px;
     }
     #home .header-content img{
+        max-width: 250px;
         margin-top: 2rem;
     }
     #about h2, 
@@ -449,7 +462,7 @@ max-width: 360px;
 #services h2, 
 #projects h2,
 #contact h2 {
-    font-size: 30px;
+    font-size: 29px;
 }
 #about .about-content .col-1 h3{
     font-size: 20px;
@@ -462,6 +475,18 @@ max-width: 360px;
 #contact .row{
     padding: 2rem 1rem;
 }
+} 
+@media (max-width: 375px){
+    #home .header-content h1{
+        font-size: 25px;
+    }
+    #home .navbar nav ul a{
+        margin: 0 4px;
+    }
+     #home .header-content img{
+        max-width: 200px;
+        margin: auto;
+    } 
 }
 .up{
     width: 36px;
@@ -480,95 +505,3 @@ max-width: 360px;
 .up.show{
     right: 17px;
  } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
