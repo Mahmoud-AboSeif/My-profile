@@ -564,7 +564,7 @@ nav li:first-child {
 @media (max-width: 775.98px) {
     nav #logo {
         font-size: 17px;
-        margin-left: 26px;
+        margin-left: 25px;
     }
 
     nav ul a {
