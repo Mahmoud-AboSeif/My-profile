@@ -495,6 +495,7 @@ nav li:first-child {
 
 #contact .row img {
     width: 100%;
+    height: 305px;
     margin-top: 25px;
     border-radius: 5px;
     filter: drop-shadow(2px 2px 2px rgba(167, 159, 159, 0.699))
