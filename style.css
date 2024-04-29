@@ -204,21 +204,70 @@ nav li:first-child {
     margin: 1rem 0 2rem;
 }
 
-#home .header-content .social a i {
-    font-size: 19px;
-    padding: 10px;
-    background-color: var(--gray-color);
-    color: #ffffffd2;
+#home .header-content .social ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+ .header-content .social .item a {
+    text-decoration: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #f0f9fe;
     border-radius: 50%;
-    margin-right: 10px;
-    transition: all .2s ease;
-}
-
-#home .header-content .social a i:hover {
-    transform: scale(1.1);
-    color: var(--gray-color);
-    background-color: #ffffffd2;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f0f9fe;
+    overflow: hidden;
+  }
+  
+.header-content .social .item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+  }
+  
+.header-content .social .item:hover a::before {
+    scale: 1 1;
+  }
+  
+  .header-content .social .icon {
+    font-size: 1.5rem;
+    color: hsl(203, 92%, 8%);
+    transition: 0.5s ease;
+    z-index: 2;
+  }
+  
+ .social .item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .social .item:nth-child(1) {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+  }
+  .social .item:nth-child(2) {
+    --bg-color: #0077b5;
+  }
+  .social .item:nth-child(3) {
+    --bg-color: #0090dd;
+  }
+  .social .item:nth-child(4) {
+    --bg-color: #000;
+  }
+  .social .item:nth-child(5) {
+    --bg-color: #000;
+  }
 
 #home .header-content img {
     max-width: 450px;
@@ -642,12 +691,17 @@ nav li:first-child {
     #home .navbar nav ul a {
         margin: 0 6px;
     }
-
-    #home .header-content .social a i {
-        font-size: 13px;
-        margin-right: 3px;
-    }
-
+    #home .header-content .social ul {
+        gap: .8rem;
+      }
+    .header-content .social .item a {
+        text-decoration: none;
+        width: 2rem;
+        height: 2rem;
+      }
+      .header-content .social .icon {
+        font-size: 1.2rem;
+      }
     #home .header-content img {
         max-width: 155px;
         margin-top: 2rem;
@@ -697,11 +751,9 @@ nav li:first-child {
         font-weight: 500;
     }
 
-    #home .header-content .social a i {
-        font-size: 10px;
-        margin-right: 1px;
-    }
-
+    #home .header-content .social ul {
+        gap: .4rem;
+      }
     #home .header-content img {
         max-width: 170px;
         margin: auto;
