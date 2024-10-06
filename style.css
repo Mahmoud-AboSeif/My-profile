@@ -235,42 +235,42 @@ nav li:first-child {
     scale: 1 0;
     transform-origin: bottom;
     transition: scale 0.5s ease;
-  }
-  
+}
+
 .header-content .social .item:hover a::before {
     scale: 1 1;
-  }
-  
-  .header-content .social .icon {
+}
+
+.header-content .social .icon {
     font-size: 1.5rem;
     color: hsl(203, 92%, 8%);
     transition: 0.5s ease;
     z-index: 2;
-  }
-  
- .social .item a:hover .icon {
+}
+
+.social .item a:hover .icon {
     color: #fff;
     transform: rotateY(360deg);
-  }
-  
-  .social .item:nth-child(1) {
+}
+
+.social .item:nth-child(1) {
     --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
-  }
-  .social .item:nth-child(2) {
+}
+.social .item:nth-child(2) {
     --bg-color: #0077b5;
-  }
-  .social .item:nth-child(3) {
+}
+.social .item:nth-child(3) {
     --bg-color: #0090dd;
-  }
-  .social .item:nth-child(4) {
+}
+.social .item:nth-child(4) {
     --bg-color: #000;
-  }
-  .social .item:nth-child(5) {
+}
+.social .item:nth-child(5) {
     --bg-color: #000;
-  }
+}
 
 #home .header-content img {
-    max-width: 450px;
+    max-width: 400px;
 }
 
 #about,
