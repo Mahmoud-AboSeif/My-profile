@@ -208,9 +208,9 @@ nav li:first-child {
     display: flex;
     list-style: none;
     gap: 1rem;
-  }
-  
- .header-content .social .item a {
+}
+
+.header-content .social .item a {
     text-decoration: none;
     width: 2.4rem;
     height: 2.4rem;
@@ -223,8 +223,8 @@ nav li:first-child {
     z-index: 1;
     border: 3px solid #f0f9fe;
     overflow: hidden;
-  }
-  
+}
+
 .header-content .social .item a::before {
     content: "";
     position: absolute;
@@ -551,7 +551,7 @@ nav li:first-child {
 
 /* contact End */
 
-/* footer Srart */
+/* footer Start */
 #footer {
     background-color: #222;
     color: #fff;
